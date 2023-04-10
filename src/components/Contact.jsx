@@ -5,6 +5,7 @@ import {styles} from '../style'
 import {EarthCanvas} from './canvas'
 import SectionWrapper from '../hoc/SectionWrapper'
 import {slideIn } from '../utils/motion'
+import { fromHalfFloat } from 'three/src/extras/DataUtils'
 const Contact = () => {
   const formRef = useRef()
   const [loading, setLoading] = useState(false)
@@ -13,8 +14,37 @@ const Contact = () => {
     email:'',
     message:'',
   })
-  const handleChange = (e)=>{}
-  const handleSubmit = (e)=>{}
+  const handleChange = (e)=>{
+       const {name,value} = e.target
+       setForm({...form,[name]:value})
+  }
+  const handleSubmit = (e)=>{
+    e.preventDefault()
+    setLoading(true)
+    emailjs.send(' service_935t41g','template_xju9g5v',
+    {
+      from_name:form.name,
+      to_name: 'Afifi',
+      from_email: form.email,
+      to_email: 'afifi71brahim@gmail.com',
+      message:form.message
+    },
+    'o5IlRGfbPD5CEy8v2'
+    )
+    .then(()=>{
+      setLoading(false)
+      alert('Thank you. I will get back to you as soon as possible')
+      setForm({
+        name:'',
+        email:'',
+        message:'',
+      })
+    }, (error)=>{
+      setLoading(false)
+      alert('Somthing went wrong')
+    } )
+  }
+ 
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
       <motion.div
