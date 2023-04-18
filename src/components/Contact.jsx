@@ -21,15 +21,16 @@ const Contact = () => {
   const handleSubmit = (e)=>{
     e.preventDefault()
     setLoading(true)
-    emailjs.send(' service_935t41g','template_xju9g5v',
+    emailjs.send(' service_1afw95s','template_xju9g5v',
     {
       from_name:form.name,
       to_name: 'Afifi',
       from_email: form.email,
       to_email: 'afifi71brahim@gmail.com',
-      message:form.message
+      message: form.message
     },
     'o5IlRGfbPD5CEy8v2'
+    
     )
     .then(()=>{
       setLoading(false)
@@ -46,7 +47,7 @@ const Contact = () => {
   }
  
   return (
-    <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
+    <div id='#contact' className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
       <motion.div
        variants={slideIn('left', 'twen',0.2,1)}
        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
@@ -84,7 +85,7 @@ const Contact = () => {
                     <span className='text-white font-medium'>Your Message</span>
                     <textarea
                     rows='7'
-                     name='messagw'
+                     name='message'
                      value={form.message}
                      onChange={handleChange}
                      placeholder="What do you want to say?"

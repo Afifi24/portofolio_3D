@@ -3,10 +3,11 @@ import { Tilt } from 'react-tilt'
 import {motion} from 'framer-motion'
 import {styles} from '../style'
 import {github} from '../assets'
+import {FaLink} from 'react-icons/fa'
 import SectionWrapper from '../hoc/SectionWrapper'
 import {fadeIn, textVariant} from '../utils/motion'
 import {projects} from '../constants'
-const ProjectCard =({index,name , description,tags,image,source_code_link})=>{
+const ProjectCard =({index,name , description,tags,image,demo, source_code_link})=>{
    return(
     <motion.div
     variants={fadeIn('up','spring', index*0.5, 0.75)}
@@ -17,7 +18,7 @@ const ProjectCard =({index,name , description,tags,image,source_code_link})=>{
       scale:1,
       speed:450
      }}
-     className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+     className='bg-tertiary p-5 rounded-2xl sm:w-[355px] w-full'
     >
     <div className='relative w-full h-[230px]'>
        <img className='w-full h-full object-cover rounded-2xl' src={image} alt="" />
@@ -29,13 +30,13 @@ const ProjectCard =({index,name , description,tags,image,source_code_link})=>{
          <img className='w-1/2 h-1/2'  src={github} alt="" />
 
       </div>
-      {/* <div
-      onClick={()=>window.open(source_code_link, '_blank')}
+      <div
+      onClick={()=>window.open(demo, '_blank')}
       className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
       >
-         <p className='text-white font-bold text-[9px]'>Demo</p>
+         <p className='text-white font-bold text-md'><FaLink/></p>
 
-      </div> */}
+      </div>
 
        </div>
     </div>
@@ -56,7 +57,7 @@ const ProjectCard =({index,name , description,tags,image,source_code_link})=>{
 }
 const Works = () => {
   return (
-    <>
+    <div id='work' className=' -mt-20' >
        <motion.div variants={textVariant()}>
       <p className={styles.sectionSubText}>
            My work
@@ -84,7 +85,7 @@ const Works = () => {
             />
            ))}
       </div>
-    </>
+    </div>
   )
 }
 

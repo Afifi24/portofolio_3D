@@ -1,30 +1,23 @@
 import {
     mobile,
     backend,
-    creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
     redux,
     tailwind,
-    nodejs,
-    mongodb,
     git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
+    
   } from "../assets";
-  
+  import youtube from '../assets/youtube.png'
+  import game from '../assets/game.png'
+  import recipe from '../assets/recippe.png'
+  import fitness from '../assets/fitness.png'
+  import country from '../assets/country.png'
+  import bank from '../assets/bank.jpeg'
   export const navLinks = [
     {
       id: "about",
@@ -42,20 +35,16 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Frontend Web development",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Responsive design",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "web design",
       icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
     },
   ];
   
@@ -72,10 +61,7 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
+    
     {
       name: "React JS",
       icon: reactjs,
@@ -88,14 +74,7 @@ import {
       name: "Tailwind CSS",
       icon: tailwind,
     },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
+   
     {
       name: "Three JS",
       icon: threejs,
@@ -104,110 +83,21 @@ import {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
   ];
   
-  const experiences = [
-    {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-  ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Youtube-Clone",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "YouTube clone built with ReactJS and Tailwind. The clone mimics the layout and functionality of the popular video-sharing platform, allowing users to search for and view videos, as well as view related videos.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "restapi",
           color: "green-text-gradient",
         },
         {
@@ -215,13 +105,14 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: youtube,
+      source_code_link: "https://github.com/Afifi24/youtube-clone",
+      demo:'https://youtube-clone-87kj.vercel.app/',
     },
     {
-      name: "Job IT",
+      name: "Game Finder",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        " By using the app, users can easily discover and explore various games from a variety of categories, including popular, upcoming, and new releases. The app provides users with detailed information about each game.",
       tags: [
         {
           name: "react",
@@ -236,30 +127,98 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: game,
+      source_code_link: "https://github.com/Afifi24/games-app",
+      demo:'https://games-app-five.vercel.app/',
     },
     {
-      name: "Trip Guide",
+      name: "Recipe-App",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Is a web app that helps users discover and explore a wide variety of recipes. The app allows users to search for recipes based on ingredients, meal types, and dietary preferences..",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "restapi",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "styled-components",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: recipe,
+      source_code_link: "https://github.com/Afifi24/full-Recipe-app",
+      demo:'https://full-recipe-app-three.vercel.app/'
+    },
+    {
+      name: "fitness website",
+      description:
+        "The website features a user-friendly interface, allowing visitors to easily navigate through the site and find the information they need. It includes informative articles on topics such as exercise routines.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "",
+          color: "green-text-gradient",
+        },
+        {
+          name: "styled-components",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: fitness,
+      source_code_link: "https://github.com/Afifi24/newwebsite",
+      demo:'https://newwebsite-eight.vercel.app/'
+    },
+    {
+      name: "Country Explorer",
+      description:
+        "Web application that provides a user-friendly interface for exploring and learning about different countries around the world. The app uses the REST Countries API to display various details about each country.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: country,
+      source_code_link: "https://github.com/Afifi24/rest-countries-api",
+      demo:'https://rest-countries-api-afifi24.vercel.app/'
+    },
+    {
+      name: "Bank modern UI",
+      description:
+        "Is a sleek and intuitive design that incorporates modern elements with traditional banking functionality. The navigation is user-friendly, allowing customers to easily access their account. ",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: bank,
+      source_code_link: "https://github.com/Afifi24/bank_modern_app",
+      demo:'https://bank-modern-app-sigma.vercel.app/'
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, projects };
