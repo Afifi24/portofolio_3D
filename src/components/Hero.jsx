@@ -15,7 +15,7 @@ const Hero = () => {
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className='text-[#915eff]'>Afifi</span></h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>Frontend web developer</p>
-          <h3 className=" text-xl md:text-4xl w-full text-center">
+          {/* <h3 className=" text-xl md:text-4xl w-full text-center">
             <Typewriter
               className=""
               options={{
@@ -24,7 +24,7 @@ const Hero = () => {
                 loop: true,
               }}
             />
-          </h3>
+          </h3> */}
         </div>
           </div>
           <ComputersCanvas/>
