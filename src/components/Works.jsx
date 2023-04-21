@@ -5,7 +5,8 @@ import {styles} from '../style'
 import {github} from '../assets'
 import {FaLink} from 'react-icons/fa'
 import SectionWrapper from '../hoc/SectionWrapper'
-import {fadeIn, textVariant} from '../utils/motion'
+import {fadeIn,textVariant} from '../utils/motion'
+
 import {projects} from '../constants'
 const ProjectCard =({index,name , description,tags,image,demo, source_code_link})=>{
    return(
@@ -57,7 +58,7 @@ const ProjectCard =({index,name , description,tags,image,demo, source_code_link}
 }
 const Works = () => {
   return (
-    <div id='work' className=' -mt-20' >
+    <div id='work' className='' >
        <motion.div variants={textVariant()}>
       <p className={styles.sectionSubText}>
            My work
