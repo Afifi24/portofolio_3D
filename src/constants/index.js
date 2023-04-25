@@ -18,6 +18,7 @@ import {
   import fitness from '../assets/fitness.png'
   import country from '../assets/country.png'
   import bank from '../assets/bank.jpeg'
+  import player from '../assets/player.png'
   export const navLinks = [
     {
       id: "about",
@@ -93,15 +94,15 @@ import {
         "YouTube clone built with ReactJS and Tailwind. The clone mimics the layout and functionality of the popular video-sharing platform, allowing users to search for and view videos, as well as view related videos.",
       tags: [
         {
-          name: "react",
+          name: "#react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "#restapi",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "#tailwind",
           color: "pink-text-gradient",
         },
       ],
@@ -115,15 +116,15 @@ import {
         " By using the app, users can easily discover and explore various games from a variety of categories, including popular, upcoming, and new releases. The app provides users with detailed information about each game.",
       tags: [
         {
-          name: "react",
+          name: "#react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "#restapi",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "#scss",
           color: "pink-text-gradient",
         },
       ],
@@ -137,15 +138,15 @@ import {
         "Is a web app that helps users discover and explore a wide variety of recipes. The app allows users to search for recipes based on ingredients, meal types, and dietary preferences..",
       tags: [
         {
-          name: "react",
+          name: "#react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "#restapi",
           color: "green-text-gradient",
         },
         {
-          name: "styled-components",
+          name: "#styled-components",
           color: "pink-text-gradient",
         },
       ],
@@ -159,7 +160,7 @@ import {
         "The website features a user-friendly interface, allowing visitors to easily navigate through the site and find the information they need. It includes informative articles on topics such as exercise routines.",
       tags: [
         {
-          name: "react",
+          name: "#react",
           color: "blue-text-gradient",
         },
         {
@@ -167,7 +168,7 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "styled-components",
+          name: "#styled-components",
           color: "pink-text-gradient",
         },
       ],
@@ -181,15 +182,15 @@ import {
         "Web application that provides a user-friendly interface for exploring and learning about different countries around the world. The app uses the REST Countries API to display various details about each country.",
       tags: [
         {
-          name: "react",
+          name: "#react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "#restapi",
           color: "green-text-gradient",
         },
         {
-          name: "Tailwind",
+          name: "#Tailwind",
           color: "pink-text-gradient",
         },
       ],
@@ -203,7 +204,7 @@ import {
         "Is a sleek and intuitive design that incorporates modern elements with traditional banking functionality. The navigation is user-friendly, allowing customers to easily access their account. ",
       tags: [
         {
-          name: "react",
+          name: "#react",
           color: "blue-text-gradient",
         },
         {
@@ -211,13 +212,35 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "Tailwind",
+          name: "#Tailwind",
           color: "pink-text-gradient",
         },
       ],
       image: bank,
       source_code_link: "https://github.com/Afifi24/bank_modern_app",
       demo:'https://bank-modern-app-sigma.vercel.app/'
+    },
+    {
+      name: "Music-Player",
+      description:
+        "Is a modern music player that allows  users to listen to the music song with next, back and playlists functionality. ",
+      tags: [
+        {
+          name: "#react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "",
+          color: "green-text-gradient",
+        },
+        {
+          name: "#Tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: player,
+      source_code_link: "https://github.com/Afifi24/music-app",
+      demo:'https://music-app-lac.vercel.app/'
     },
   ];
   
